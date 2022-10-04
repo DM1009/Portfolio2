@@ -1,11 +1,12 @@
 <template>
+
     <div class='about'>
-        <div data-aos="flip-left" class='about_img'>
+        <div data-aos="flip-right" class='about_img'>
             <img src="../assets/imgs/profile.png" alt="">
         </div>
         <div data-aos="fade-up" class='about_ani'>
             <div class="about_text">
-                <h5>저는 영상편집자로 1년 반 가까이 근무하다가!</h5>
+                <h5>저는 영상회사에서 1년 반 근무했으며,</h5>
                 <p>개발쪽에 관심이 생겨 개발을 공부하고 있는</p>
                 <p>신입 개발자 입니다.</p>
 
@@ -31,7 +32,7 @@
 .about {
     width: 100%;
     height: 800px;
-    background-color: rgb(121, 234, 234);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -43,7 +44,7 @@
 }
 
 .about_text {
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     width: 40%;
     height: 80%;
     border-radius: 30px;
@@ -101,7 +102,8 @@
     }
 
     .about_img img {
-        max-width: 50%;
+        max-width: 100%;
+        height: 200px;
         transform: translate(0%, 10%);
     }
 }
