@@ -45,7 +45,7 @@
 }
 
 .about_text {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(179, 216, 255);
     width: 40%;
     height: 80%;
     border-radius: 30px;
@@ -54,10 +54,19 @@
 }
 
 .about_text h5 {
-    font-size: 30px;
-    color: rgb(2, 21, 73);
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 35px;
+    color: rgb(98, 0, 202);
+    font-family: 'SDSamliphopangche_Basic';
     line-height: 60px;
+
+}
+
+@font-face {
+
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
