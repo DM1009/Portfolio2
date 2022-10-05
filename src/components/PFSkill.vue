@@ -36,13 +36,12 @@
     
 <style>
 .Skills {
-    margin-top: 50px;
+    padding-top: 50px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 860px;
-    z-index: 20;
 }
 
 .Skills_text {

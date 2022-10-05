@@ -1,9 +1,7 @@
 <template>
     <div class='home'>
-
-
         <div class="drawsvg">
-            <svg version="1.1" viewBox="50 -170 800 300">
+            <svg version="1.1" viewBox="50 -170 800 300" class='class'>
                 <symbol id="fade-text">
                     <text x="50%" y="20%" text-anchor="middle">저는 신입 개발자</text>
                     <text x="65%" y="40%" text-anchor="middle">문성훈 입니다</text>
@@ -34,7 +32,7 @@ export default {
 <style>
 .home {
     height: 900px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 
 
@@ -42,6 +40,7 @@ export default {
 svg {
     width: 100%;
     height: 500px;
+
 }
 
 

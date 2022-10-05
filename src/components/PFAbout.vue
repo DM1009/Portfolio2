@@ -30,9 +30,10 @@
     
 <style>
 .about {
+    padding-top: 50px;
     width: 100%;
     height: 800px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 
 

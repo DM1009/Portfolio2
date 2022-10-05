@@ -1,27 +1,26 @@
 <template>
+
+
   <div id='navi'>
     <div class='navbar__logo'>
       <h2>DM</h2>
     </div>
     <ul class="navbar__menu">
-      <li class="navbar__menu__item active" @click='moveScroll(0)' data-link="
+      <li class="navbar__menu__item active" @click='moveScroll()' data-link="
         #home">
         Home
       </li>
-      <li class="navbar__menu__item" @click='moveScroll(832)' data-link="
+      <li class="navbar__menu__item" @click='moveScroll()' data-link="
         #about">
         About
       </li>
-      <li class="navbar__menu__item" @click='moveScroll(1652)' data-link="
+      <li class="navbar__menu__item" @click='moveScroll()' data-link="
         #skills">
         Skills
       </li>
-      <li class="navbar__menu__item" @click='moveScroll(2527)' data-link="
+      <li class="navbar__menu__item" @click='moveScroll()' data-link="
         #work">
         Work
-      </li>
-      <li class="navbar__menu__item">
-        Contact
       </li>
     </ul>
   </div>
@@ -30,6 +29,11 @@
   <skill id='skills' />
   <project id='work' />
 
+  <div class="ocean">
+
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
 </template>
 
 <script>
@@ -38,10 +42,16 @@ import about from './components/PFAbout.vue'
 import skill from './components/PFSkill.vue'
 import project from './components/PFProject.vue'
 
+
+
 export default {
   name: 'App',
   components: {
-    home, about, skill, project
+    home,
+    about,
+    skill,
+    project,
+
   },
   methods: {
     scrollIntoView(selector) {
@@ -56,6 +66,7 @@ export default {
         navbar.classList.remove('navbar_dark');
       }
     },
+
     moveScroll() {
       const navbarMenu = document.querySelector('.navbar__menu');
       navbarMenu.addEventListener('click', (event) => {
@@ -69,7 +80,8 @@ export default {
       });
 
 
-    }
+    },
+
   },
   mounted() {
     document.addEventListener('scroll', this.navbarHeight)
@@ -79,6 +91,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Jua');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -88,10 +102,70 @@ export default {
 
 }
 
+body {
+  background: radial-gradient(ellipse at center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, #d2ecf7 100%);
+}
+
+h2 {
+  font-family: 'SDSamliphopangche_Outline';
+}
+
+h5 {
+  font-family: 'SDSamliphopangche_Outline';
+}
+
+.ocean {
+  height: 1%;
+  width: 100%;
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  background: #015871;
+  opacity: 20%;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
 ul {
   list-style: none;
   margin-top: 10px;
-
+  z-index: 2;
 }
 
 
@@ -143,6 +217,13 @@ ul {
   background-color: rgb(2, 149, 247);
   border-radius: 4px;
   color: white;
+}
+
+@font-face {
+  font-family: 'SDSamliphopangche_Outline';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {

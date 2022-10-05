@@ -62,11 +62,17 @@ export default {
 </script>
     
 <style>
+body {
+    z-index: 2;
+}
+
 .projects {
+    padding-top: 50px;
     width: 100%;
     height: 860px;
-    background-color: rgb(95, 131, 160);
-    clear: both
+    background-color: transparent;
+    clear: both;
+
 }
 
 .card {
