@@ -45,7 +45,7 @@
 }
 
 .about_text {
-    background-color: rgb(179, 216, 255);
+    background-color: rgb(179, 216, 255, 0.5);
     width: 40%;
     height: 80%;
     border-radius: 30px;
@@ -90,7 +90,7 @@
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
     .about_text {
-        background-color: white;
+        background-color: (179, 216, 255, 0.5);
         width: 100%;
         height: 40%;
         padding-top: 0px;
