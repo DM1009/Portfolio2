@@ -16,6 +16,11 @@
                             <p><strong>'Express'</strong>를 사용해 서버 부분을 구축했으며</p>
                             <p><strong>'Sequelize'</strong>를 사용해 사용자DB와</p>
                             <p>게시물을 관리할 수 있습니다.</p>
+                            <div class="url">
+                                <a href='https://dwitterdm.netlify.app/'>
+                                    <strong>URL:</strong> https://dwitterdm.netlify.app/
+                                </a>
+                            </div>
                         </div>
                         <div class='UseSkill'>
                             <h5>Use Skills</h5>
@@ -32,9 +37,8 @@
                         </div>
                     </div>
                 </swiper-slide>
-                <swiper-slide>Slide 2</swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide>준비중...</swiper-slide>
+
                 ...
             </swiper>
         </div>
@@ -140,6 +144,19 @@ body {
     transform: translate(5%, -100%);
 }
 
+.url {
+    line-height: 100px;
+    transform: translate(5%, -100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
 
 
@@ -229,6 +246,12 @@ body {
     .project_text h2 {
         transform: translate(25%, 10%);
         line-height: 0px;
+
+    }
+
+    .url {
+        transform: translate(25%, 10%);
+        line-height: 55px;
 
     }
 
