@@ -67,6 +67,7 @@
 
 }
 
+
 .Skills_img img {
 
     max-width: 100%;
